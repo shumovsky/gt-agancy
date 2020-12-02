@@ -1,0 +1,27 @@
+.about-us {
+    background: $bg-color;
+}
+
+.about-us__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12rem;
+}
+
+.about-us__content {
+    flex-basis: 50%;
+}
+
+.about-us__img{
+    background-repeat: no-repeat;
+    background: linear-gradient(0deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 8.24%), linear-gradient(270deg, #FFFFFF 2.16%, rgba(255, 255, 255, 0) 9.24%), linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 7%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 6.32%); 
+ 
+}
+.about-us__text {
+    padding-top: 3rem;
+    @include font(1.8rem, 2.8rem);
+    color: $color-text;
+    span {
+        font-weight: bold;
+    }
+}

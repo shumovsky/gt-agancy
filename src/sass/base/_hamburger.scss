@@ -1,0 +1,38 @@
+%hamburger-line {
+    display: inline-block;
+    content: "";
+    background: $color-hamburger;
+    border-radius: 5px;
+    height: 0.258rem;
+    width: 3.3rem;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    background: $color-light;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0 1.5rem 0 2.9rem;
+    &:hover {
+        cursor: pointer;
+    }
+    &::before {
+        @extend %hamburger-line;
+        top: 0;        
+    }
+    &::after {
+        @extend %hamburger-line;
+        bottom: 0;
+    }
+}
+
+.hamburger__line {
+ @extend %hamburger-line;
+ margin: 8px 0;
+}
+

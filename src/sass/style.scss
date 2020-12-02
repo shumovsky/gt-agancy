@@ -1,0 +1,24 @@
+// Normalize
+@import "../../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+
+// Abstracts
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+// Layouts
+@import "layouts/header";
+@import "layouts/about-us";
+@import "layouts/our-services";
+@import "layouts/advantage";
+@import "layouts/contact";
+
+
+
+// Base
+@import "base/base";
+@import "base/hamburger";
+
+// Components
+@import "components/cards";

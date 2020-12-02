@@ -1,0 +1,23 @@
+{
+  "name": "gt-agancy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch src/sass/style.scss src/sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shumovsky/gt-agancy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shumovsky/gt-agancy/issues"
+  },
+  "homepage": "https://github.com/shumovsky/gt-agancy#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
+}

@@ -1,0 +1,99 @@
+.contact {
+    padding: 8rem 0;
+    background: $color-additional;
+}
+
+.contact__wrapper {
+    display: flex;
+    
+}
+.contact__info {
+    background: $color-light;
+    flex-basis: 46%;
+    padding: 8rem 0 0 7rem;box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    :nth-child(3){
+        margin: 2rem 0;
+    }
+    padding-bottom: 10.6rem;
+}
+
+.contact__info_text {
+    @include font(2.4rem, 3.1rem);
+    color: $color-text;
+    span {
+        font-weight: bold;
+    }   
+    a {
+        color: $color-text;
+    }
+}
+
+.contact__consultation {
+    flex-basis: 44%;
+    margin-left: 14.2rem;
+    input {
+        background: $color-additional;
+        outline: none;
+        border: none;
+        width: 100%;
+        color: $color-light;
+        @include font(1.8rem, 2.8rem, normal);
+        padding-bottom: 1rem;
+    }
+    textarea {
+        background: $color-additional;
+        resize: none;
+       width: 45.6rem;
+       height: 9rem;
+       border: 0.5px solid #FFFFFF;
+    border-radius: 3px;
+    color: $color-light;
+    @include font(1.8rem, 2.8rem, normal);
+    }
+    ::placeholder {
+        @include font(1.8rem, 2.8rem, normal);
+        color: $color-light;
+    }
+}
+
+.contact__consultation_title {
+    @include font(2.8rem, 3.6rem, bold);
+    color: $color-light;
+}
+
+.contact-form__input-wrapper {
+    padding-top: 3rem;
+    max-width: 45.6rem;
+    border-bottom: 1px solid $color-light;
+}
+
+.contact-form__text-wrapper {
+    @include font(1.8rem, 2.8rem, normal);
+    color: $color-light;
+    p {
+        padding: 1.6rem 0 2.6rem;
+    }  
+}
+
+.contact__consultation_btn {
+    cursor: pointer;
+    @include font(1.8rem, 2.3rem, bold);
+    color: $color-text;
+    padding: 1rem 4rem;
+    background: $color-light;
+    @extend %transition;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.25);
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    outline: none;
+   margin-top: 4rem;
+   &:hover {
+       color: $color-light;
+       border: 1px solid $color-light;
+       background: $color-additional;
+   }
+}
+
+
+

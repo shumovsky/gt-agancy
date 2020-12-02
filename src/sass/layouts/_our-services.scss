@@ -1,0 +1,21 @@
+.services {
+    padding-top: 12rem;
+    background: $bg-color;
+}
+
+.our-services__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 6rem;
+}
+
+.services__card{
+    margin-top: 3rem;
+}
+
+.our-services__text {
+    @include font(2.8rem, 3.6rem);
+    color: $color-light;
+    padding-left: 5rem;
+}

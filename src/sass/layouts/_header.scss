@@ -1,0 +1,52 @@
+.header{
+    padding-top: 2rem;
+     background-image: url(./../img/header-bg.png);
+}
+.header__menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    max-width: 34.7rem;
+    background: $color_additional;
+    box-shadow: 0px 0px 15px rgba(72, 72, 76, 0.25);
+    border-radius: 1rem;
+    // padding: 1.4rem 3rem 2.1rem;
+    a{
+        @include font(2.6rem, 3.3rem, bold);
+        color: $color-light;
+        margin: 0 3rem;
+        img {
+            margin-right: 1.8rem;
+        }
+       
+    }
+    &:hover {
+        transform: scale(1.1);
+        @extend  %transition;
+    }
+}
+
+.header__title {
+    max-width: 67.1rem;
+    padding-top: 26rem;
+}
+
+.header__text{
+    @include font(2.8rem, 3.6rem);
+    padding-top: 2.5rem;
+}
+
+.heade__button{
+    @include font(1.8rem, 2.3rem, bold);
+    color: $color-light;
+    padding: 1.1rem 5.4rem;
+    box-shadow: 0px 4px 4px rgba(72, 72, 76, 0.25);
+    border-radius: 1rem;
+    background: $color_additional;
+    border: none;
+    margin-top: 4rem;
+}

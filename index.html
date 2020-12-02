@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/sass/style.css">
     <title>Document</title>
   </head>
   <body>
     <header class="header">
       <div class="wrapper header__wrapper">
-        <div class="header__contact">
-          <img src="./src/img/ico/phone.png" alt="" />
-          <a href="tel:+375 (17) 215-61-15">+375 (17) 215-61-15</a>
+        <div class="header__menu">
+          <div class="header__contact">
+            <p><a href="tel:+375 (17) 215-61-15"><img src="./src/img/ico/phone.png" alt="" />+375 (17) 215-61-15</a></p>
+         </div>
+          <div class="header__navigation"> 
+            <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
+          </div>
         </div>
-        <div class="header__navigation"></div>
         <div class="">
-          <h1>Информационные услуги в области безопасности</h1>
-          <p>Проверка деловой репутации компании</p>
-          <button class="">Подробнее</button>
+          <h1 class="header__title">Информационные услуги в области безопасности</h1>
+          <p class="header__text">Проверка деловой репутации компании</p>
+          <button class="heade__button">Подробнее</button>
         </div>
       </div>
     </header>
@@ -24,11 +28,11 @@
       <!-- About US -->
       <section class="about-us">
         <div class="wrapper about-us__wrapper">
-          <div class="about-us__img"></div>
+          <div class="about-us__img"><img src="./src/img/why-cambay-digital 1.png" alt=""></div>
           <div class="about-us__content">
             <h3 class="about-us__title">О нас</h3>
             <p class="about-us__text">
-              ООО «Сервис» создано в 2019 году для повышения операционной
+              <span> ООО «Сервис» создано в 2019</span> году для повышения операционной
               эффективности клиентов за счет приема на аутсорсинг обеспечивающих
               и вспомогательных бизнес-процессов (их отдельных этапов), что
               позволяет клиентам сфокусироваться на основных видах деятельности
@@ -40,7 +44,7 @@
               международного объединения независимых аудиторских и
               консалтинговых компаний BDO International Limited.
             </p>
-            <p><span>160</span>сотрудников компании</p>
+            <p class="about-us__text"><span class="">160</span> сотрудников компании</p>
           </div>
         </div>
       </section>
@@ -48,34 +52,37 @@
       <!-- Our services -->
       <section class="services">
         <div class="wrapper services__wrapper">
-          <div class="sevices__card">
-              <div>Информационные услуги в области безопасности</div>
+          <h3 class="our-services__title">Наши услуги</h3>
+          <div class="our-services__content">
+          <div class="services__card card-1">
+              <div class="our-services__text">Информационные услуги в области безопасности</div>
               <div><img src="./src/img/info.png" alt=""></div>
           </div>
-          <div class="sevices__card">
-              <div>Услуги по обеспечению безопасности</div>
-              <div><img src="./src/img/services.png" alt=""></div>
+          <div class="services__card card-2">
+              <div class="our-services__text">Услуги по обеспечению безопасности</div>
+              <div><img src="./src/img/security.png" alt=""></div>
           </div>
-          <div class="sevices__card">
+          <div class="services__card card-3">
               <div><img src="./src/img/job.png" alt=""></div>
-              <div>Услуги в области трудовых отношений</div>
+              <div class="our-services__text">Услуги в области трудовых отношений</div>
           </div>
-          <div class="sevices__card">
+          <div class="services__card card-4">
               <div><img src="./src/img/calc.png" alt=""></div>
-              <div>Услуги в области бухгалтерского, налогового учета и отчетности</div>
+              <div class="our-services__text">Услуги в области бухгалтерского, налогового учета и отчетности</div>
           </div>
-          <div class="sevices__card">
+          <div class="services__card card-5">
               <div><img src="./src/img/marketing.png" alt=""></div>
-              <div>Услуги в области маркетинга</div>
+              <div class="our-services__text">Услуги в области маркетинга</div>
            </div>
-          <div class="sevices__card">
+          <div class="services__card card-6">
               <div><img src="./src/img/management.png" alt=""></div>
-              <div>Услуги по внедрению системы менеджмента качества</div>
+              <div class="our-services__text">Услуги по внедрению системы менеджмента качества</div>
           </div>
-          <div class="sevices__card">
+          <div class="services__card card-7">
               <div><img src="./src/img/services.png" alt=""></div>
-              <div>Название услуги</div>
+              <div class="our-services__text">Название услуги</div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -85,10 +92,35 @@
         <div class="wrapper advantage__wrapper">
           <h3 class="advantage__title">Преимущества аутсорсинга</h3>
           <div class="advantage__content">
-            <div class="advantage__card"></div>
-            <div class="advantage__card"></div>
-            <div class="advantage__card"></div>
-            <div class="advantage__card"></div>
+            <div class="advantage__card">
+              <div class="advantage__card_content">
+                <img src="./src/img/ico/diamond.png" alt="">
+                <p class="advantage__card_text">Вы получаете <span> услуги высокого качества </span> в короткий срок</p>
+              </div>
+              <div class="advantage__card_plus"><img src="./src/img/ico/plus.png" alt=""></div>
+            </div>
+            <div class="advantage__card">
+              <div class="advantage__card_content">
+                <img src="./src/img/ico/money.png" alt="">
+                <p class="advantage__card_text"><span>Оптимизирует финансовые затраты</span> предприятия</p>
+              </div>
+              <div class="advantage__card_plus"><img src="./src/img/ico/plus.png" alt=""></div>
+            </div>
+            <div class="advantage__card">
+              <div class="advantage__card_content">
+                <img src="./src/img/ico/star.png" alt="">
+                <p class="advantage__card_text">Избавляет от обязательств
+                по трудовому законодательству</p>
+              </div>
+              <div class="advantage__card_plus"><img src="./src/img/ico/plus.png" alt=""></div>
+            </div>
+            <div class="advantage__card">
+              <div class="advantage__card_content">
+                <img src="./src/img/ico/arrow.png" alt="">
+              <p class="advantage__card_text"><span>Дает возможность сосредоточиться</span>  на основных бизнес-процессах</p>
+            </div>
+              <div class="advantage__card_plus"><img src="./src/img/ico/plus.png" alt=""></div>
+            </div>
           </div>
         </div>
       </section>
@@ -97,20 +129,20 @@
 
       <section class="contact">
         <div class="wrapper contact__wrapper">
-          <div>
-            <h3>Контакты</h3>
-             <p>
+          <div class="contact__info">
+            <h3 class="contact__info_title">Контакты</h3>
+             <p class="contact__info_text">
                 <span> Телефон:</span> <a href="tel:+375 26 909-00-00">+375 26 909-00-00 </a>
             </p>    
-            <p> <h5>
+            <p class="contact__info_text"> <span>
                 Емейл:
             </span>
               <a href="mailto:example@gmail.com">example@gmail.com</a>
             </p>
-            <p><span>Адрес:</span> 279987 г. Минск, ул. Октябрьская, 65, оф. 678</p>     
+            <p class="contact__info_text"><span>Адрес:</span> 279987 г. Минск, ул. Октябрьская, 65, оф. 678</p>     
           </div>
-          <div class="consultation">
-              <h5>Хотите получить консультацию?</h5>
+          <div class="contact__consultation">
+              <h5 class="contact__consultation_title">Хотите получить консультацию?</h5>
               <div class="contact-form__input-wrapper">
                 <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Имя">
               </div>   
@@ -118,10 +150,14 @@
                 <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Телефон">
              </div>
              <div class="contact-form__text-wrapper">
-                 <p>Ваше сообщение (необязательно)</p>
+                 <p class="">Ваше сообщение (необязательно)</p>
                  <textarea name="" id="" cols="30" rows="10"></textarea>
              </div>
+             <button class="contact__consultation_btn">Перезвоните мне</button>
         </div>
+      </section>
+      <section class="">
+        <div id="map" class="map"></div>
       </section>
     </main>
     <footer class="footer">
@@ -154,5 +190,8 @@
         </div>
         </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>

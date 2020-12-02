@@ -1,0 +1,21 @@
+.advantage {
+    padding: 12rem 0;
+}
+.advantage__title{
+    text-align: center;
+}
+
+.advantage__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 6rem;
+}
+
+.advantage__card_text{
+    @include font(2.8rem, 3.6rem);
+    color: $color-text;
+    span {
+        font-weight: bold;
+    }
+}
