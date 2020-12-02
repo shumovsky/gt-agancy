@@ -449,7 +449,7 @@ template {
   display: none;
 }
 
-.contact__consultation_btn, .header__contact:hover {
+.footer__content_social-list ul li:hover, .footer__content_list-2 ul li:hover, .footer__content_list-1 ul li:hover, .contact__consultation_btn, .header__contact:hover {
   transition: all 0.3s ease-out;
 }
 
@@ -711,6 +711,69 @@ template {
   color: #fff;
   border: 1px solid #fff;
   background: linear-gradient(180deg, #27214A 0%, rgba(118, 110, 162, 0) 100%), #27214A;
+}
+
+.footer {
+  background: #48484C;
+  color: #fff;
+  padding-top: 6rem;
+}
+
+.footer__title {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 2.3rem;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 12rem;
+}
+.footer__content ul {
+  padding: 0;
+}
+.footer__content ul li a {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2.1rem;
+}
+
+.footer__content_list-1 {
+  flex-basis: 33%;
+}
+.footer__content_list-1 ul li {
+  padding-bottom: 1.8rem;
+}
+.footer__content_list-1 ul li:hover {
+  transform: scaleY(1.1);
+}
+
+.footer__content_list-2 {
+  flex-basis: 29%;
+}
+.footer__content_list-2 ul li {
+  padding-bottom: 1.8rem;
+}
+.footer__content_list-2 ul li:hover {
+  transform: scaleY(1.1);
+}
+
+.footer__content_social-list {
+  flex-basis: 17%;
+  align-self: flex-end;
+}
+.footer__content_social-list ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__content_social-list ul li:hover {
+  transform: scale(1.2);
 }
 
 html {
